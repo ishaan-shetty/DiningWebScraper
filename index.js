@@ -25,10 +25,6 @@ function runScrapper(){
 
                 itemList.push({item, ingredientList})
             })
-
-            const requiredList = itemList.filter(obj => {
-                return obj.ingredientList.some(ingredient => ingredient.toLowerCase().includes('beef'));
-            });
         })
 }
 
